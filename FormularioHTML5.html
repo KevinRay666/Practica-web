@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>
+            Formulario HTML 5
+        </title>
+        <h1>
+            Formulario HTML 5
+        </h1>
+    </head>
+    <body>
+        Formulario html 5
+        <form id="formulario">
+            <ul>
+                <li> Nombre: <input type="text" name="nombre" autofocus="autofocus" pattern="[a-zA-Z]" required placeholder="Ingresa tu Nombre"></li>
+                <li> Apellido <input type="text" name="apellido" required placeholder="Ingresa tu Apellido"> </li>
+                <li> Edad: <input type="number" name="edad" min="0" max="150" required step="1" placeholder="Ingresa tu Edad"> </li>
+                <li> Fecha de nacimiento: <input type="date" name="nacimiento" required > </li>
+                <li> 
+                    Sexo: 
+                    <datalist id="sexo">
+                        <option value="Hombre">
+                        <option value="Mujer">
+                    </datalist>
+                    <input name="sexo" list="sexo" required>
+                </li>
+                <li> Selecciona multiples archivos <input type="file" name="archivos" multiple required> </li>
+                <li> Correo: <input type="email" name="emails" multiple required> </li>
+            </ul>
+             Enviar <input type="image" src="Cosas/iconoBerserk.png" value="Enviar" name="enviar" width="50" height="50">
+        </form>
+
+        <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0  a <input type="range" id="a" value="50">100   +<input type="number" id="b" value="50">  =<output name="x" for="a b"></output> </form>
+
+
+    </body>
+</html>
